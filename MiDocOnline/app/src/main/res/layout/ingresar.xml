@@ -1,252 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".99">
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
 
-    </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:background="@drawable/icoprin"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_marginBottom="100dp" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".93">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/correoelectronico"
+            android:layout_width="300dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
+            <EditText
+                android:id="@+id/txtcorreoelectronico"
+                android:layout_width="292dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="Correo Electronico"
+                android:inputType="text"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_margin="5dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|center_horizontal">
 
-            </RelativeLayout>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="292dp"
+                android:layout_height="45dp"
+                android:hint="Contraseña"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".95">
+        </android.support.design.widget.TextInputLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/orderpicture_imv_picture"
-                    android:background="@drawable/icoprin"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
-            </RelativeLayout>
+        <Button
+            android:text="INGRESAR"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:id="@+id/btningresaringresar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light"
+            android:layout_margin="30dp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
+        <Button
+            android:text="¿OLVIDÓ SU CONTRASEÑA?"
+            android:id="@+id/btnolvido"
+            android:layout_width="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
 
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".8">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".8">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25"
-                        android:background="@android:color/background_light">
-
-                        <EditText
-                            android:id="@+id/txtcorreo"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Correo Electrónico."
-                            android:inputType="textAutoComplete"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:layout_centerVertical="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"></EditText>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25"
-                        android:background="@android:color/background_light">
-
-                        <EditText
-                            android:id="@+id/textpass"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Contraseña"
-                            android:inputType="textAutoComplete"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:layout_centerVertical="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"></EditText>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".95">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25"
-                android:gravity="center_vertical|center_horizontal|center">
-
-
-                <Button
-                    android:text="Ingresar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/btningresarcc"
-                    android:freezesText="false"
-                    android:textColor="@android:color/background_light"
-                    android:backgroundTint="@android:color/background_dark"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="normal|bold" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".95">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25"
-                android:gravity="center_vertical|center_horizontal|center">
-
-
-                <Button
-                    android:text="¿Olvidó su Contraseña?"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnolvido"
-                    android:freezesText="false"
-                    android:textColor="@android:color/background_light"
-                    android:backgroundTint="@color/colorAccent"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".7">
-
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_margin="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".80">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".4">
+
+                <TextView
+                    android:text="CUENTA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView3"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".80">
+
+                <Button
+                    android:text="Editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:background="@drawable/icoprin"
+                android:layout_height="40dp"
+                android:layout_width="50dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/perfil"
+                android:id="@+id/imageView3"
+                android:layout_width="101dp"
+                android:layout_height="101dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:text="Nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtnombreperfil"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="5dp"
+                android:textStyle="normal|bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/perfilcorreo"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/txtcorreoperfil"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Correo"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/telefonoperfil"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/txttelefonoperfil"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Telefono"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/especialidadperfil"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/txtespecialidadperfiil"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Especialidad"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

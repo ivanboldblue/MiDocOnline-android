@@ -1,160 +1,362 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".99">
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
 
-    </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:background="@drawable/icoprin"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_marginBottom="20dp" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".93">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:text="Términos y Condiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="5dp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".95">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/orderpicture_imv_picture"
-                    android:background="@drawable/icoprin"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".8">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".3">
-
-                <TextView
-                    android:text="Términos y Condiciones"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/textView"
-                    android:textStyle="normal|bold"
-                    android:textColor="@android:color/background_dark" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".3">
-
-                <TextView
-                    android:text="Acuerdo De Privacidad"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView3"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@android:color/background_dark" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".3">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".34">
+        <TextView
+            android:text="Acuerdo de Términos y Condiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2p"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="5dp" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <RelativeLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:text="SI ESTAS EN UNA SITUACION DE EMERGENCIA, ACUDE AL HOSPITAL MAS CERCANO"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".95">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_margin="5dp" />
 
-                </RelativeLayout>
-
-                <RelativeLayout
+                <TextView
+                    android:text="CUIDADOSAMENTE LEE LOS TERMINOS Y CONDICIONES DE ESTE ACUERDO ANTES DE DAR CLICK EN ACEPTAR. DAR CLICK EN “ACEPTO” INDICA QUE ESTAS ACEPTANDO ESTOS TERMINOS Y CONDICIONES. SI NO ESTAS DE ACUERDO CON ESTOS TERMINOS Y CONDICIONES SOBRE EL USO DE ESTE SERVICIO, CIERRA ESTA PAGINA Y NO CONTINUES CON EL USO O LA SUSCRIPCION DE LA MISMA. SE ESTABLECE Y SE SOBRE ENTIENDE QUE ACEPTAS ESTOS TERMINOS Y CONDICIONES EN EL MOMENTO EN EL QUE REALIZAS LO SIGUIENTE: 1) ESTAS ACEPTANDO LOS TERMINOS Y CONDICIONES AL MOMENTO DE ESTABLECER DE FORMA IMPRESA, ORAL O ELECTRONICA CUALQUIER CONTACTO ELECTRONICO MARCANDO QUE HAS REVISADO Y ACEPTADO; 2) INTENTAS UTILIZAR O EN CUALQUIER MODO UTILIZAS O TE SUSCRIBES A LOS SERVICIOS DE MIDOCONLINE.COM; 3) PAGAS POR EL SERVICIO DE MIDOCONLINE.COM (PAGUES A TRAVES DE TU CUENTA O A TRAVES DE LA CUENTA DE UN TERCERO); O 4)INICIES CUALQUIER PROGRAMA QUE INDIQUE QUE ESTAS ACEPTANDO LOS TERMINOS Y CONDICIONES. "
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".1">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:text="Prestamos servicios jurídicos en nuevas tecnologías desde Baleares y más allá. Te ayudamos en los aspectos legales de tu tienda online, el registro de tu nueva marca, la adecuación de tus campañas de publicidad o la puesta a punto de tu startup, entre otras cuestiones."
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView4" />
-
-                        <TextView
-                            android:text="Prestamos servicios jurídicos en nuevas tecnologías desde Baleares y más allá. Te ayudamos en los aspectos legales de tu tienda online, el registro de tu nueva marca, la adecuación de tus campañas de publicidad o la puesta a punto de tu startup, entre otras cuestiones."
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView2" />
-                    </LinearLayout>
-                </RelativeLayout>
-
-                <RelativeLayout
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Términos de Uso"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".95">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
 
-                </RelativeLayout>
+                <TextView
+                    android:text="Los términos y condiciones de uso de MIDOCONLINE, así como cualquier suscripción o servicio de MIDOCONLINE, automáticamente incluye pero no está limitado a la más reciente actualización de los términos y condiciones de este acuerdo, independientemente de que haya cambiado desde la primera vez que utilizaste los servicios o te suscribiste a MIDOCONLINE. MIDOCONLINE tiene el derecho de cambiar los términos y condiciones de este acuerdo en cualquier momento sin la obligación de dar aviso. Siempre podrás revisar la version más actualizada de los términos y condiciones en www.midoconline.com. Cuidadosamente lee todas las partes de este acuerdo incluyendo ARBITRAJE OBLIGATORIO y ACCION DE ABANDONO."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Tu entiendes y estás de acuerdo en que (1) estás utilizando o te estarás suscribiendo a MIDOCONLINE para facilitar la entrega de servicios de salud de parte de especialistas que también han estado de acuerdo en proveer sus servicios a traves de MIDOCONLINE (los “proveedores”), y que esos servicios son proveídos ante la discreción y juicio médico de los Proveedores; (2) el servicio MIDOCONLINE pudiera no ser reembolsado por ningun seguro social, institución gubernamental o cualquier programa de salud por lo que estás de acuerdo en no usar MIDOCONLINE con el proposito de obtener un reembolso por cualquiera de las organizaciones antes mencionadas; (3) MIDOCONLINE pudiera no ser reembolsado por ninguna aseguradora, organización del cuidado de la salud, o sistema de nómina de una empresa privada y por lo tanto no buscarás el reembolso de cualquiera de las organizaciones mencionadas por el costo del uso de MIDOCONLINE; (4) tienes al menos 18 años de edad o estás acompañado por algún pariente o responsable que pueda dar consentimiento a tu nombre en el caso de ser menor de 18 años en el momento de la consulta; y (6) si estás buscando servicios medicos a nombre de un niño o menor de 18 años, dependiente o cualquer persona de quien tú eres el responsible en el cuidado de su salud, tu aprobación en los terminos y condiciones de este acuerdo limitarán a cualquier otra persona a estos terminos y condiciones."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:text="AVISO PRIVACIDAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Las prácticas y el Aviso de Privacidad de MIDOCONLINE y la forma en la que la información médica podría ser utilizada y resguardada y la forma en la que tú puedes acceder a ella se encuentra en el apartado de Términos de Privacidad. MIDOCONLINE se reserva el derecho de modificar el Aviso de Privacidad bajo discreción bajo ciertas circunstancias y se irá actualizando con el tiempo. El Aviso de Privacidad y las Prácticas y cualesquiera otras políticas de privacidad, se encuentran sujetas a las leyes y políticas de los Estados Unidos Mexicanos. Debido a que MIDOCONLINE se encuentra hospedado, es una aplicación en línea, ocasionalmente pudiera tener la necesidad de notificar a sus usuarios y a la comunidad de los servicios de MIDOCONLINE, sobre avisos importantes con respecto a la operación y servicio de MIDOCONLINE. Si tú te conviertes en un usuario ya sea gratuito o estás pagando por los servicios de MIDOCONLINE, estás de acuerdo en que MIDOCONLINE pudiera dar aviso de que eres un cliente que paga o recibe servicios gratuitos de parte de MIDOCONLINE."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:text="Si tuvieras alguna duda con respecto a el Aviso de Privacidad, ponte en contacto con MIDOCONLINE. El e-mail de atención a clientes se encuentra disponible en www.midoconline.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="LICENCIA DE USO Y RESTRICCIONES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE te otorga el derecho de utilizar sus servicios de manera no exclusiva, no tranferible a nivel mundial, únicamente para tu propio beneficio, sujeto a los términos y condiciones de este Acuerdo de Uso. Todos los derechos no expresos están reservados para MIDOCONLINE y sus licenciatarios."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Está prohibido accesar al servicio de MIDOCONLINE si eres un competidor directo. Además, no puedes accesar al servicio para monitorear su disponibilidad, desempeño o funcionalidad, o para cualquier otra comparación o propósitos de competitividad."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Está prohibida (1)la licencia, sublicencia, vender, revender, arrendar, transferir, asignar, distribuir, o cualquier otra forma commercial para explotar los servicios de MIDOCONLINE; (2) modificar o hacer trabajos derivados o basados en el servicio de MIDOCONLINE; (3) publicar los servicios de MIDOCONLINE; (4) transmitir los servicios de MIDOCONLINE a través de la red, vía telefónica, o electronica; (5) crear vínculos de internet con otros sitios; copiar los servicios de MIDOCONLINE para crear un producto que compita con MIDOCONLINE."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="TUS OBLIGACIONES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Tu eres responsible de cualquier actividad que ocurra bajo tu cuenta o usuario en los servicios de MIDOCONLINE. Es tu obligación reportar a MIDOCONLINE por cualquier situación en la que alguien hubiera utilizado tu contraseña de manera indebida."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="PAGO POR CONSULTAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView29a"
+                    android:layout_gravity="center_vertical|right"/>
+
+                <TextView
+                    android:text="Es tu obligación pagar por cualquier orientación que recibas de parte de cualquier miembro del cuerpo medico de MIDOCONLINE, independientemente de la duración de la consulta o si el medico te recetó o no algún medicamento. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView28a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Todas las facturas se realizan en pesos mexicanos. Los datos que tú proporciones para la realización de las facturas son tu responsabilidad y MIDOCONLINE no tiene ninguna obligación de verificar que tus datos sean correctos. En el caso de que MIDOCONLINE se dé cuenta de que tus datos sean incorrectos, puede terminar la relación de forma inmediata y dar de baja tu cuenta."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView27a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Si exisitiera un error en tu cuenta, es tu obligación comunicarte lo más pronto posible para hacer la corrección. MIDOCONLINE se reserva el derecho de cobrar por cualquier cambio en la facturación, ya que esto puede implicar ciertos gastos administrativos."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="INDEMNIZACION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView25a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Tu estás de acuerdo en indemnizar y defender los intereses de MIDOCONLINE, sus filiales, afiliados, compañias hermanas, empleados, proveedores, agentes, vendedores, proveedores y licenciatarios ante cualquier demanda, pérdidas, derechos, abogados o cualquier tipo de gastos que resulte por (1) tu uso o suscripción al servicio de MIDOCONLINE; (2) por la información que des de tu persona o tu salud a través de los servicios de MIDOCONLINE; (3) de cualquier violación que realices acerca de los acuerdos aquí establecidos."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="OBLIGACIONES DE MIDOCONLINE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView23a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE y sus proveedores o licenciatarios no tienen ninguna responsabilidad, garantía, con respecto a los tiempos, calidad, veracidad, disponibilidad con respecto a sus servicios o su contenido. MIDOCONLINE  no garantiza que la suscripción de tu parte sea segura, en tiempo, sin interrupciones, libre de errores. MIDOCONLINE no garantiza que el servicio cumpla con tus expectativas. MIDOCONLINE no garantiza que la información sea certera, que la calidad de la orientación cumpla con tus expectativas. MIDOCONLINE no garantiza que la orientación esté libre de errores o defectos ni que sea corregidos. Tú estás de acuerdo en que el uso  MIDOCONLINE se encuentra bajo tu propio riesgo. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView22a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE no es proveedor de servicios de salud; simplemente provee un sistema para facilitar la comunicación con los médicos para que otorguen una orientación al o los interesados. MIDOCONLINE verifica que todos los proveedores cumplan con sus estudios, licencias y actualizaciones en el conocimiento de su área de especialidad. MIDOCONLINE específicamente se deslinda de cualquier problema que pueda ocasionar los actos u omisiones de cualquier proveedor o médico con respecto a la orientación que pueda otorgar a los usuarios. MIDOCONLINE tampoco es responsable de las recétas médicas que pueda expedir cualquiera de los proveedores que se encuentran en el servicio de MIDOCONLINE ni de las consecuencias que pueda tener el haber tomado o no tomado la prescripción del medico o proveedor. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView21a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE no es un reemplazo de tu médico de cabecera o de confianza. Orientaciones a través de MIDOCONLINE ayudan en los casos más communes de enfermedades, sin embargo muchos casos requieren de una visita personal para completar la orientación."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView20a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE no garantiza que un proveedor o médico vaya a dar una recéta médica con respecto a un medicamento en específico. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="PROBLEMAS DE CONEXION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="MIDOCONLINE se encuentra sujeto a limitantes, retrasos o cualquier otro problema de conexión por internet y las comunicaciones electrónicas. MIDOCONLINE no es responsible por cualquier retraso en una consulta debido a las telecomunicaciones y por lo tanto no se hace responsable del posible daño que pueda ocasionar esto."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="RESOLUCION DE DISPUTAS, ARBITRAJE OBLIGATORIO Y ACCION DE ABANDONO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="En un caso extraño en el que tu problema no quede resuelto de forma satisfactoria a través de MIDOCONLINE, tú y MIDOCONLINE están de acuerdo en resolver esas diferencias de buena fe. En el caso de que no sea posible resolver de buena fe, ambos estarán sujetos a la legislación y los tribunales de la ciudad de Puebla, México."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Arbitraje Obligatorio y Acción de Abandono. En lugar de utilizar el sistema judicial, tú y MIDOCONLINE están de acuerdo en manejar cualquier disputa (definido más adelante) bajo un esquema individual, sin abogados. Estás de acuerdo en aceptar los términos y condiciones de este acuerdo. Tú y MIDOCONLINE están de acuerdo en la Acción de Abandono al derecho de demandas o juicios o de participar en cualquier acción legal con respecto a cualquiera de las partes. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="En Arbitraje no hay demandas o juicios. Las disputas son decididas bajo un comité neutral bajo un proceso más informal que una demanda o juicio. El Arbitraje deberá de sujetarse a los términos y condiciones de los acuerdos aquí establecidos."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Las Disputas incluyen, pero no están limitadas a, cualquier reclamación o controversias entre cualquiera de las partes que puedan surgir del servicio de MIDOCONLINE, incluyen, pero no limitan, los servicios de cobro y prácticas, incluso aún cuando el acceso o la suscripción aMIDOCONLINE ya hubieran terminado. Las disputas incluyen reclamos que: (a) tú o alguien autorizado por tí o no autorizado por tí, puedan llevar en contra de MIDOCONLINE, sus subsidiarias, afiliados, empresas hermanas, empleados, prodedores, agentes, vendedores, o licenciatarios; (b) que tú puedas hacer en contra de los Proveedores o (c) que MIDOCONLINE pudiera realizar en tu contra. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="AVISO DE DISPUTA Y PERIODO DE SOLUCION DE DISPUTAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Antes de iniciar un arbitraje o cualquier tema de reclamo, tú y MIDOCONLINE están de acuerdo en avisar a la contra parte de forma escrita mediante un “Aviso de Disputa”, que debará contener la descripción del problema y los documentos o información que soporten dicho problema. El Aviso de Disputa deberá de ser enviado a las oficinas de MIDOCONLINE en Calzada Zavaleta 1306-A interior 132 colonia Santa Cruz Buenavista en la ciudad de Puebla, Puebla Mexico, o por medio de e-mail que se encuentra en el apartado de contacto en la página www.midoconline.com. MIDOCONLINE asignará a una persona para que pueda ayudarte a resolver la disputa. Tú y MIDOCONLINE están de acuerdo en realizar el intento por resolver la disputa antes de iniciar cualquier acción de arbitraje."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="TERMINOS, PROCESOS Y REGLAS DE ARBITRAJE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="A menos que tú y MIDOCONLINE acuerden otra cosa, el proceso de arbitraje se llevará a cabo a través de una sola persona, neutral y se llevará a cabo en la ciudad de Puebla, Puebla México."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="El proceso de arbitraje medico se llevará a cabo mediante las reglas que tú y MIDOCONLINE establezcan o mediante las reglas que la Comisión Estatal de Arbitraje Médico de Puebla (CESAMED) establezca. Tu y MIDOCONLINE están de acuerdo en que la Secretaría de Salud de la República Mexicana es la que determina si una situación es sujeta de arbitraje o no."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Tú y MIDOCONLINE están de acuerdo en que cada una de las partes puede presentar alguna reclamación de forma individual, y no como miembro de un grupo o representante de varios afectados. El arbitraje no podrá consolidar a más de una persona en cualquier reclamación. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Cada uno es responsable de sus propios gastos que deriven de abogados, expertos, testigos, a menos que alguna ley Mexicana permita lo opuesto."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Como alternativa al arbitraje, cualquier problema se deberá de resolver en los juzgados del Estado de Puebla en México."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Dependiendo de las leyes federales de la República Mexicana, tu uso y acceso a MIDOCONLINE será gobernado por las leyes del Estado de Puebla. Si cualquiera de las partes hace caso omiso a este acuerdo, no nos reservamos el derecho de realizar ese reclamo."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3a"
+                    android:layout_gravity="center_vertical|right"
+
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="FIRMA ELECTRONICA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="Reconozco que he leido y entiendo los términos y condiciones. Estoy de acuerdo en regirme por ellos a mi nombre o de parte de cualquier persona que de parte mía, utilice el servicio de MIDOCONLINE. Entiendo y estoy de acuerdo que si fallo en el cumplimiento de los términos y condiciones de este acuerdo, se me puede prohibir el uso de MIDOCONLINE, y de que deslindaré de cualquier problema a MIDOCONLINE. Certifico que tengo al menos 18 años de edad y de que estoy en libertad de derecho y tengo la habilidad de establecer el presente acuerdo bajo mi nombre o el que haya dado de alta o registrado en MIDOCONLINE. Entiendo que los proveedores o médicos están basando sus actividades de acuerdo a la información que yo facilito para otorgarme orientación médica."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView1a"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="5dp" />
+
             </LinearLayout>
         </ScrollView>
-    </RelativeLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

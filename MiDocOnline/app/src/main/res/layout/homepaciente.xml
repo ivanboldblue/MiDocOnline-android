@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@android:color/background_light"
+            android:layout_margin="10dp"
+            android:layout_height="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".80">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnperfilpaciente"
+                    android:background="@drawable/perfil" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".2">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".80">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnsalirpaciente"
+                    android:background="@drawable/log"
+                    android:layout_margin="3dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:background="@drawable/icoprin"
+                android:layout_height="40dp"
+                android:layout_width="50dp" />
+
+            <Button
+                android:text="EMERGENCIA"
+                android:id="@+id/btnemergenciapaciente"
+                android:layout_width="300dp"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+                android:layout_height="35dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/especialidad"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/especialidad2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Especialidad Médica."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/medico"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/medico2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Médico."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/buscarmedico"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/buscarmedico2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Buscar Médico."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="Historial"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:id="@+id/btnhistorial"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/background_light"
+                android:layout_margin="5dp"
+                android:textStyle="normal|bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/llama"
+                android:id="@+id/btnllamarpaciente"
+                android:background="@drawable/llama"
+                android:layout_margin="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

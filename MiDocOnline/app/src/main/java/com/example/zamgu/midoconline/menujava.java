@@ -1,8 +1,12 @@
 package com.example.zamgu.midoconline;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 
 public class menujava extends FragmentActivity {
 
@@ -17,5 +21,17 @@ public class menujava extends FragmentActivity {
 
         // Set the ViewPagerAdapter into ViewPager
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
+
+
+    public void onBackPressed(View v) {
+        // save data first
+        Intent iExp2 = new Intent(menujava.this, menujava.class);
+        startActivity(iExp2);
+        super.onBackPressed();
+    }
+
+
 }

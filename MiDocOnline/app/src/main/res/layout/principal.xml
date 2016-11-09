@@ -1,401 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo">
+    android:gravity="center_horizontal">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".99">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".93">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".95">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/orderpicture_imv_picture"
-                    android:background="@drawable/icoprin"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".70">
-
-            </RelativeLayout>
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".7">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25">
-
-                        <Button
-                            android:text="EMERGENCIA"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/btnemergencia"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true"
-                            android:textColor="@android:color/background_light"
-                            android:background="@android:color/holo_red_dark"
-                            android:textSize="20sp" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25"
-                        android:background="@android:color/background_light">
-
-                        <EditText
-                            android:id="@+id/txtespmed"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Especialidad Médica."
-                            android:inputType="textAutoComplete"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:layout_centerVertical="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:elevation="1dp"></EditText>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25"
-                        android:background="@android:color/background_light">
-
-                        <EditText
-                            android:id="@+id/txtmed"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Médico."
-                            android:inputType="textAutoComplete"
-                            android:gravity="center_vertical|center_horizontal"></EditText>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".25"
-                        android:background="@android:color/background_light">
-                        <EditText
-                            android:id="@+id/txtbuscar"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Buscar Médico."
-                            android:inputType="textAutoComplete"
-                            android:gravity="center_vertical|center_horizontal"></EditText>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".75">
-
-                    </RelativeLayout>
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".8">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnllamar"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/llama" />
-    </RelativeLayout>
+            android:layout_margin="20dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".95">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:background="@drawable/icoprin"
+                android:layout_height="40dp"
+                android:layout_width="50dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            <Button
+                android:text="EMERGENCIA"
+                android:id="@+id/btnemergencia"
+                android:layout_width="300dp"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+                android:layout_height="35dp" />
 
-            <RelativeLayout
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/especialidad"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/especialidad2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Especialidad Médica."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/medico"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/medico2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Médico."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/buscarmedico"
+                android:layout_width="300dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/buscarmedico2"
+                    android:layout_width="292dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Buscar Médico."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/llama"
+                android:id="@+id/btnllamarprincipal"
+                android:background="@drawable/llama"
+                android:layout_margin="15dp" />
+
+            <Button
+                android:text="INGRESAR"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:id="@+id/btningresarprincipal"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/background_light"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:text="REGISTRATE AQUI"
+                android:id="@+id/btnregistrarprincipal"
+                android:layout_width="200dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                />
+
+            <Button
+                android:text="TÉRMINOS Y CONDICIONES"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".25">
-
-                <Button
-                    android:text="Ingresar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btningresar"
-                    android:textColor="@android:color/background_light"
-                    android:background="@color/colorPrimary"
-                    android:textSize="20sp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".75">
-
-            </RelativeLayout>
-
+                android:layout_height="35dp"
+                android:id="@+id/btnterminosprincipal"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
         </LinearLayout>
-    </RelativeLayout>
+    </ScrollView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".99999">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".97">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".5">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".4"
-                android:gravity="center_vertical|center_horizontal|center">
-
-
-                <Button
-                    android:text="Registrate AQUI."
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnregistrar"
-                    android:freezesText="false"
-                    android:textColor="@android:color/background_light"
-                    android:backgroundTint="@color/colorAccent"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:background="@color/colorAccent" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".5">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".87">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".97">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".55">
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".35"
-                android:gravity="center_vertical|center_horizontal|center">
-
-
-                <Button
-                    android:text="Términos y Condiciones"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnterminos"
-                    android:textColor="@android:color/background_light"
-                    android:layout_centerHorizontal="true"
-                    android:background="@color/colorAccent"
-                    android:freezesText="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight=".55">
-
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".95"
-        android:elevation="1dp">
-
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

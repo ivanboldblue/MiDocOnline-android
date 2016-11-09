@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zamgu.midoconline">
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +26,20 @@
         <activity android:name=".principal2java">
         </activity>
         <activity android:name=".registrojava">
+        </activity>
+        <activity android:name=".registropjava">
+        </activity>
+        <activity android:name=".elegirjava">
+        </activity>
+        <activity android:name=".homepacientejava">
+        </activity>
+        <activity android:name=".homemedicojava">
+        </activity>
+        <activity android:name=".perfilpacientejava">
+        </activity>
+        <activity android:name=".perfilmedicojava">
+        </activity>
+        <activity android:name=".historialjava">
         </activity>
     </application>
 

@@ -20,5 +20,6 @@ public class nadajava extends Fragment {
         View rootView = inflater.inflate(R.layout.nada, container, false);
 
         return rootView;
+
     }
 }
