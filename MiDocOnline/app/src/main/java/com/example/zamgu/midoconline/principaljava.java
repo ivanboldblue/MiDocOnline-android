@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * Created by zamgu on 30/10/2016.
@@ -19,6 +21,7 @@ import android.widget.Button;
 
 public class principaljava extends Fragment implements View.OnClickListener {
     Button btn1, btn2, btn3;
+    ImageButton btncall;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -30,6 +33,20 @@ public class principaljava extends Fragment implements View.OnClickListener {
         btn2.setOnClickListener(this);
         btn3 = (Button) rootView.findViewById(R.id.btnregistrarprincipal);
         btn3.setOnClickListener(this);
+        ImageButton camBt = (ImageButton)rootView.findViewById(R.id.btnllamarprincipal);
+
+
+        ImageButton.OnClickListener listener = new ImageButton.OnClickListener()
+        {
+
+            @Override
+            public void onClick(View arg0)
+            {
+                Intent intent = new Intent(getActivity().getApplication(), LoginActivity.class);
+                startActivity(intent);
+            }
+        };
+        camBt.setOnClickListener(listener);
         return rootView;
 
     }
