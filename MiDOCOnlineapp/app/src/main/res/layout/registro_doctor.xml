@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:background="@drawable/icoprin"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_marginBottom="5dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/nombre_medico"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txt_nombre_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Nombre"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/correo_medico"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txt_correo_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/pass_medico">
+
+                    <EditText
+                        android:id="@+id/txt_pass_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:hint="Contraseña (Minimo 8 Caracteres)"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/pass_confirmacion_medico">
+
+                    <EditText
+                        android:id="@+id/txt_pass_confirmacion_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:hint="Confirmar Contraseña"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/licencia_medico"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txt_licencia_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Licencia De Especialidad"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:text="Especialidad"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_especialidad_medico"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:layout_width="174dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/especialidad_medico"
+                        android:gravity="center_vertical|center_horizontal|start" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:text="Pais"
+                        android:layout_width="43dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_pais_medico"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pais_medico"
+                        android:gravity="center_vertical|center_horizontal|start" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ciudad_medico"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txt_ciudad_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Ciudad"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/numero_medico"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/txt_numero_medico"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Número Telefónico"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:text="SOLICITAR ACTIVACIÓN"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/btn_activacion__medico"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/background_light"
+                    android:layout_margin="5dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:elevation="1dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/box_terminos_medico"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <Button
+                            android:text="TÉRMINOS Y CONDICIONES"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_terminos_medico"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

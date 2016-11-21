@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:background="@drawable/icoprin"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_marginBottom="5dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/nombre_paciente"
+                    android:layout_width="300dp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp">
+
+                    <EditText
+                        android:id="@+id/txt_nombre_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Nombre"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/apellido_paciente"
+                    android:layout_width="300dp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp">
+
+                    <EditText
+                        android:id="@+id/txt_apellido_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Apellido"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/correo_paciente"
+                    android:layout_width="300dp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp">
+
+                    <EditText
+                        android:id="@+id/txt_correo_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/passpaciente">
+
+                    <EditText
+                        android:id="@+id/txt_pass_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:hint="Contraseña (Minimo 8 Caracteres)"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/pass_confimacion_paciente">
+
+                    <EditText
+                        android:id="@+id/txt_pass_confirmacion_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:hint="Confirmar Contraseña"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/numero_paciente"
+                    android:layout_width="300dp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp">
+
+                    <EditText
+                        android:id="@+id/txt_numero_paciente"
+                        android:layout_width="292dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:hint="Número Telefónico"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:text="Fecha De Nacimiento"
+                    android:layout_width="301dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/label_fecha_paciente"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:text="Dia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_dia_paciente"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="Mes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_mes_paciente"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="Año"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_año__paciente"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <Spinner
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dias_paciente" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mes_paciente"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/year_paciente"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="301dp">
+
+
+                    <TextView
+                        android:text="Genero"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/label_genero_paciente"
+                        android:textSize="18sp"
+                        android:gravity="center_horizontal" />
+
+                    <Spinner
+                        android:layout_height="match_parent"
+                        android:id="@+id/genero_paciente"
+                        android:textSize="36sp"
+                        android:layout_weight="0.14"
+                        android:layout_width="25dp" />
+                </LinearLayout>
+
+                <Button
+                    android:text="REGISTRAR"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/btn_registrar_paciente"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/background_light"
+                    android:layout_margin="5dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:elevation="1dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/box_terminos_paciente"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <Button
+                            android:text="TÉRMINOS Y CONDICIONES"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_terminos_paciente"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

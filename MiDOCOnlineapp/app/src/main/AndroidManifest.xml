@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blodblue.zamgutz.midoconlineapp">
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".Sich.SinchService"></service>
+        <activity android:name=".Ingresar.ingresar_java">
+        </activity>
+        <activity android:name=".MenuPrincipal.inicio_java">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuPrincipal.menu_principal_java">
+        </activity>
+        <activity android:name=".PerfilDoctor.historial_doctor_java">
+        </activity>
+        <activity android:name=".PerfilDoctor.perfil_doctor_java">
+        </activity>
+        <activity android:name=".PerfilDoctor.principal_medico_java">
+        </activity>
+        <activity android:name=".PerfilPaciente.historial_paciente_java">
+        </activity>
+        <activity android:name=".PerfilPaciente.perfil_paciente_java">
+        </activity>
+        <activity android:name=".PerfilPaciente.principal_paciente_java">
+        </activity>
+        <activity android:name=".Registro.registro_doctor_java">
+        </activity>
+        <activity android:name=".Registro.registro_paciente_java">
+        </activity>
+        <activity android:name=".Terminos.terminos_java">
+        </activity>
+        <activity android:name=".IoCard.iocard_java">
+        </activity>
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"/>
+        <activity android:name="io.card.payment.DataEntryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Sich.LoginActivity">
+        </activity>
+        <activity android:name=".Sich.CallScreenActivity"/>
+        <activity android:name=".Sich.IncomingCallScreenActivity" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".Sich.PlaceCallActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
